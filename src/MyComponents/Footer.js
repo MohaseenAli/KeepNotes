@@ -1,16 +1,13 @@
 import React from 'react'
+import "../css/footer.css"
 
 const Footer = () => {
-  let footerStyle = {
-    width: "100%",
-    border: "2px solid grey"
-  }
   return (
-    <footer className="bg-dark text-light py-3" style={footerStyle}>
+    <div className="text-light py-3 note-footer" >
       <p className="text-center">
         Copyright &copy; KeepNotes.com
       </p>
-    </footer>
+    </div>
   )
 }
 
