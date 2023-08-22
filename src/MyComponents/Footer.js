@@ -2,11 +2,18 @@ import React from 'react'
 import "../css/footer.css"
 
 const Footer = () => {
+  let myStyle = {
+    color:"white",
+    backgroundColor:"black",
+    padding:"15px",
+    position:"relative",
+    bottom:"-133px",
+  }
   return (
-    <div className="text-light py-3 note-footer" >
-      <p className="text-center">
+    <div style={myStyle}>
+      <div className="text-center">
         Copyright &copy; KeepNotes.com
-      </p>
+      </div>
     </div>
   )
 }

@@ -3,7 +3,6 @@ import { TodoItem } from "./TodoItem"
 
 const Todos = (props) => {
   let myStyle = {
-    minHeight: "70vh",
     margin: "10px auto"
   }
   return (
@@ -12,7 +11,11 @@ const Todos = (props) => {
       {
         props.todos.length === 0 ? "No todos to dispaly" :
           props.todos.map((todo) => {
-            return <><TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete} /><hr /></>
+            return (
+              <React.Fragment key={todo.sno}>
+                <TodoItem todo={todo}  onDelete={props.onDelete} /><hr />
+              </React.Fragment>
+            )
           })
       }
     </div>
